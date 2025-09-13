@@ -1,3 +1,1 @@
-a, b = eval(input())
-
-print(max(a, b))
+print(", ".join(map(str, sorted(map(int, input().strip()[1:-1].split(","))))))
