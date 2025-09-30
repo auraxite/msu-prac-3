@@ -1,0 +1,1 @@
+print(sorted(list(map(int, input().split(','))), key=lambda x: x**2 % 100))
