@@ -1,0 +1,3 @@
+a = Triangle((0, 0), (4, 0), (2, 3))
+b = Triangle((1, 1), (2, 1), (1.5, 2))
+print(a in b, b in a, a & b, b & a)
