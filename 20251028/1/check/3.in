@@ -1,0 +1,6 @@
+a = Omnibus()
+a.hi = 1
+b = a
+a.__setattr__("🦃", "kukareku1")
+b.__setattr__("🦃", "kukareku2")
+print(a.__getattr__("🦃"), b.hi)
