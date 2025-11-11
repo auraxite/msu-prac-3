@@ -1,0 +1,3 @@
+a = DivStr("123456789abcdef")
+print(* a[1:4] // 3)
+print(a % 5 + DivStr() + a % 6)
