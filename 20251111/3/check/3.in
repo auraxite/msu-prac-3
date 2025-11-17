@@ -1,0 +1,4 @@
+wo = Vowel(y=1, a=2, u=3)
+print(wo, wo.full)
+wo.e = wo.o = wo.i = 3
+print(wo, wo.full)

@@ -1,0 +1,10 @@
+v = Vowel()
+
+v.a = 1
+v.e = 2
+v.i = 3
+v.o = 4
+v.u = 5
+v.y = 6
+
+print(v, v.full)
