@@ -1,0 +1,9 @@
+store 1 a
+store 1 one
+store 5 b
+loop:
+out a
+add a one a
+iflt a b loop
+out a
+stop
