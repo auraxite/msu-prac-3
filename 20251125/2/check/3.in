@@ -1,0 +1,11 @@
+store 1 i
+store 5 n
+store 0 sum
+store 1 one
+
+loop:
+add sum i sum
+add i one i
+iflt i n loop
+out sum
+stop

@@ -1,0 +1,8 @@
+class C(metaclass=dump):
+    def func(self, flag):
+        if flag:
+            return 1
+
+c = C()
+print(c.func(True))
+print(c.func(False))

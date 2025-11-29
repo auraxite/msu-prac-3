@@ -1,0 +1,11 @@
+store 10 x
+store 5 y
+add x y res1
+sub x y res2
+mul x y res3
+div x y res4
+out res1
+out res2
+out res3
+out res4
+stop

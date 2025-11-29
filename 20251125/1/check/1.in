@@ -1,0 +1,10 @@
+class C(metaclass=dump):
+    def __init__(self, val):
+        self.val = val
+
+    def sub(self, other):
+        return self.val - other
+
+c = C(0)
+print(c.sub(1))
+print(c.sub(2))

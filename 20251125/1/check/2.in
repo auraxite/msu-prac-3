@@ -1,0 +1,10 @@
+class C(metaclass=dump):
+    def __init__(self, a, b):
+        self.x = a + b
+
+    def mul(self, k=1):
+        return self.x * k
+
+c = C(2, 3)
+print(c.mul())
+print(c.mul(k=5))
