@@ -16,4 +16,5 @@ async def prod(q1):
         print(f"prof: put {v} to q1")
         await asyncio.sleep(1)
 
-# async def mid(q1, q2):
+async def mid(q1, q2):
+    

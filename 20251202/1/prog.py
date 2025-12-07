@@ -11,8 +11,13 @@ async def writer(queue, delay):
         await asyncio.sleep(delay)
 
 async def stacker(queue, stack):
-    while not event.is_set():
-        el = await queue.get()
+    while True:
+        if event.is_set() and queue.empty():
+            return
+        try:
+            el = await asyncio.wait_for(queue.get(), timeout=0.01)
+        except asyncio.TimeoutError:
+            continue
         stack.append(el)
 
 async def reader(stack, num, delay):
